@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>Погода</title>
+    <link rel="icon" href="https://www.pngall.com/wp-content/uploads/11/Weather-PNG-Background.png" type="image/x-icon">
+</head>
+<body>
+    <div class="wrapper">
+        <div id="weather" class="weather">
+            <div class="weather__header">
+                <div class="weather__main">
+                    <div class="weather__city">Kyiv</div>
+                    <div class="weather__status">Clouds</div>
+                </div>
+            </div>
+            <div class="weather__icon">
+                <img src="http://openweathermap.org/img/w/04d.png" alt="Clouds">
+            </div>
+            <div class="weather__temp">14</div>
+            <div class="weather__feels-like">Feels like: 13</div>
+        </div>
+    </div>
+    <div class="city-selector">
+        <select id="citySelect">
+            <option value="Kyiv">Київ</option>
+            <option value="Zaporizhzhia">Запоріжжя</option>
+            <option value="Lviv">Львів</option>
+            <option value="Odesa">Одеса</option>
+            <option value="Kharkiv">Харків</option>
+        </select>
+    </div>
+    <iframe width="0" height="315" src="https://www.youtube.com/embed/6E_I8vdLMPI?autoplay=1&loop=1&playlist=6E_I8vdLMPI&" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; loop" allowfullscreen></iframe>
+    <script src="/script.js"></script>
+</body>
+</html>
