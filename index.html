@@ -8,6 +8,21 @@
     <link rel="icon" href="https://www.pngall.com/wp-content/uploads/11/Weather-PNG-Background.png" type="image/x-icon">
 </head>
 <body>
+
+    <div class="app-container">
+        <header class="header">
+            <div class="logo" id="logo">Weather</div>
+            <button class="menu-toggle" id="menu-toggle">☰</button>
+            <nav class="nav" id="nav-menu">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
     <div class="wrapper">
         <div id="weather" class="weather">
             <div class="weather__header">
@@ -24,15 +39,29 @@
         </div>
     </div>
     <div class="city-selector">
-        <select id="citySelect">
-            <option value="Kyiv">Київ</option>
-            <option value="Zaporizhzhia">Запоріжжя</option>
-            <option value="Lviv">Львів</option>
-            <option value="Odesa">Одеса</option>
-            <option value="Kharkiv">Харків</option>
-        </select>
+        <input type="text" id="cityInput" placeholder="Enter a city" value="Kyiv">
     </div>
     <iframe width="0" height="315" src="https://www.youtube.com/embed/6E_I8vdLMPI?autoplay=1&loop=1&playlist=6E_I8vdLMPI&" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; loop" allowfullscreen></iframe>
-    <script src="/script.js"></script>
+    </div>
+
+    <div class="coment">
+        <h2>Ваш відгук</h2>
+        <textarea class="text__btn" id="comment-text" cols="30" rows="10" placeholder="Напишіть свій коментар"></textarea>
+        <input class="name__input" id="name-input" type="text" placeholder="Ваше ім'я">
+        <button class="button" id="send-comment">Відправити</button>
+        <div class="comments-list" id="comments-list"></div> 
+    </div>
+
+    <footer>
+        <div class="footer__main">
+            <div class="block">📞 Телефон: +38 (098) 08-50-397</div>
+            <div class="block">📧 Email: rubanikyaroslav@gmail.com</div>
+            <div class="block">🏢 Адреса: вул. Тімірязєва, 18, Вінниця, Україна</div>
+            <div class="block">!!!!!!!Всі права захищені!!!!!!!</div>
+        </div>
+    </footer>
+
+    <script src="./script.js"></script>
+    <script src="./weather.js"></script>
 </body>
 </html>
